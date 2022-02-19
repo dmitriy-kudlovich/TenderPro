@@ -1,0 +1,33 @@
+nav.header__nav
+    .nav__col.nav__col--left
+        .header__hamburger
+            button.button.hamburger
+                .hamburger__inner
+        .mobile-menu
+            .mobile-menu__links
+                a.header__link.link(href="#!") о компании
+                a.header__link.link(href="#!") справка
+                a.header__link.link(href="#!") тарифы
+                a.header__link.link(href="#!") контакты
+        .header__logo
+            a.link(href="index.html")
+                img.logo(src="./img/logo.svg" alt="logo")
+    .nav__col.nav__col--right
+        .nav__input-wrapper
+            input.nav__input(type="text" placeholder="Искать конкурсы, товары, компании")
+            .nav__input-search
+                button.button.button--search
+                    img(src="./img/icons/search-icon.svg" alt="search")
+        .header__nav-menu
+            .header__links.nav-menu__item
+                a.header__link.link(href="#!") о компании
+                a.header__link.link(href="#!") справка
+                a.header__link.link(href="#!") тарифы
+                a.header__link.link(href="#!") контакты
+            .header__search.nav-menu__item
+                button.button.button--search
+                    img(src="./img/icons/search-icon-black.svg" alt="search")
+            .header__options.nav-menu__item
+                +hamburger-square
+            .header__button.nav-menu__item
+                button.button войти

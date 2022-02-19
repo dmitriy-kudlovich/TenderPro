@@ -1,0 +1,27 @@
+.list__item {
+  display: flex;
+  margin-bottom: 1rem;
+  line-height: 1.25rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.list__item::before {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  padding-top: 3px;
+  margin-right: 8px;
+  width: 24px;
+  height: 24px;
+}
+
+.list__item--cross::before {
+  content: url(../img/icons/cross.svg);
+}
+
+.list__item--check::before {
+  content: url(../img/icons/check.svg);
+}

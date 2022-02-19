@@ -1,0 +1,95 @@
+@import "../scss/_base.scss";
+
+.header__content {
+  position: relative;
+  background: url(../img/header/header-bg.jpg) no-repeat center/cover;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.header__content::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #00000066;
+}
+
+.header__desc {
+  margin: 0 auto;
+  padding-top: 146px;
+
+  @media (min-width: 90rem) {
+    width: calc(75% + 48px);
+  }
+
+  @include adaptive-size(312, 326, padding-bottom, 20, 48, 320);
+  @include adaptive-size(326, 202, padding-bottom, 48, 90, 768);
+
+  @media (min-width: 90rem) {
+    padding-bottom: 202px;
+  }
+}
+
+.header__desc-inner {
+  position: relative;
+  z-index: 2;
+
+  @media (min-width: 90rem) {
+    width: 83.33%;
+  }
+
+  @media (min-width: 120rem) {
+    width: 66.67%;
+  }
+}
+
+.header__title {
+  margin-bottom: 1.25rem;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: -0.05rem;
+
+  @media (min-width: 48rem) {
+    margin-bottom: 2rem;
+    font-size: 3.375rem;
+  }
+
+  @media (min-width: 90rem) {
+    margin-bottom: 2.5rem;
+    font-size: 4.625rem;
+  }
+}
+
+.header__pointer {
+  display: flex;
+  position: absolute;
+  top: 16px;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.75rem;
+
+  color: #fff;
+
+  @media (min-width: 48rem) {
+    top: 20px;
+    font-size: 0.875rem;
+  }
+
+  @include adaptive-size(24, 32, left, 48, 90, 1440);
+  @include adaptive-size(16, 24, left, 20, 48, 768);
+
+  @media (min-width: 90rem) {
+    left: 32px;
+  }
+}
+
+.header__pointer-text {
+  position: relative;
+  z-index: 2;
+}
+
+.header__pointer--final {
+  z-index: 0;
+}
