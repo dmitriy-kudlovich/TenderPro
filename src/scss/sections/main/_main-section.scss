@@ -1,18 +1,13 @@
 .main__section {
-  padding: 44px 0;
+  padding: 2.75rem 0;
 
   @media (min-width: 48rem) {
-    padding: 60px 0;
+    padding: 3.75rem 0;
   }
 
   @media (min-width: 90rem) {
-    padding: 80px 0;
+    padding: 5rem 0;
   }
-}
-
-.main__section--dark {
-  background-color: #232630;
-  color: #fff;
 }
 
 .section__row {
@@ -22,6 +17,15 @@
   @media (min-width: 48rem) {
     flex-direction: row;
   }
+}
+
+.section-top {
+  padding-top: 5.25rem;
+  padding-bottom: 3.5rem;
+}
+
+.section-bottom {
+  padding: 2rem 0;
 }
 
 .main__desc {
@@ -43,3 +47,5 @@
     width: 58%;
   }
 }
+
+
